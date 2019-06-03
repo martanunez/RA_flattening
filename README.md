@@ -10,7 +10,7 @@ Overview:
 
 ![Example image](https://github.com/martanunez/RA_flattening/blob/master/pipeline_RA.png)
 
-Synthetic examples:
+Examples using two synthetic textures on a real RA surface:
 
 ![Examples](https://github.com/martanunez/RA_flattening/blob/master/syn_examples.png)
 

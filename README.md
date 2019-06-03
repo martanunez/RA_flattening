@@ -2,7 +2,8 @@
 Author: Marta Nuñez-Garcia (marnugar@gmail.com)
 
 ## About
-Implementation of the Right Atrial (RA) flattening described in "Standard quasi-conformal flattening of the right and left atria", Marta Nuñez-Garcia et al., Functional Imaging and Modeling of the Heart. FIMH 2019. LNCS, vol 11504.
+Implementation of the Right Atrial (RA) flattening described in "Standard quasi-conformal flattening of the right and left atria", Marta Nuñez-Garcia, Gabriel Bernardino, Ruben Doste, Jichao Zhao, Oscar Camara, and Constantine Butakoff. In Functional Imaging and Modeling of the Heart (FIMH 2019) LNCS, vol 11504.
+
 Given a RA surface mesh with holes corresponding to the tricuspid valve (TV), and the superior and inferior vena cava (SVC and IVC, respectively), it produces a two-dimensional standardised representation of the input mesh as described in the paper. 
 
 Overview:

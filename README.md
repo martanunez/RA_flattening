@@ -5,9 +5,13 @@ Author: Marta Nuñez-Garcia (marnugar@gmail.com)
 Implementation of the Right Atrial (RA) flattening described in "Standard quasi-conformal flattening of the right and left atria", Nuñez-Garcia, M., et al., Functional Imaging and Modeling of the Heart. FIMH 2019. Lecture Notes in Computer Science, vol 11504.
 Given a RA surface mesh with holes corresponding to the tricuspid valve (TV), and the superior and inferior vena cava (SVC and IVC, respectively), it obtains a two-dimensional standardised representation of the input mesh as described in the paper. 
 
-Example:
+Overview:
 
 ![Example image](https://github.com/martanunez/RA_flattening/blob/master/pipeline_RA.png)
+
+Synthetic examples:
+
+![Examples](https://github.com/martanunez/RA_flattening/blob/master/syn_examples.png)
 
 ## Code
 [Python](https://www.python.org/) scripts depending (basically) on [VTK](https://vtk.org/) and [VMTK](http://www.vmtk.org/). 

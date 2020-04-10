@@ -65,10 +65,10 @@ Then, install vmtk:
 ```
 conda install -c vmtk vtk itk vmtk
 ```
-Activate the environment when needed using:
+<!-- Activate the environment when needed using:
 ```
 conda activate vmtk_env
-```
+``` -->
 You can also build VMTK from source if you wish, for example, to use a specific VTK version. Instructions can be found [here.](http://www.vmtk.org/download/)
 
 

@@ -16,6 +16,7 @@
 
 from aux_functions import *
 import argparse
+from sys import platform
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--meshfile', type=str, metavar='PATH', help='path to input mesh')
@@ -43,7 +44,13 @@ if not os.path.exists(args.meshfile):
 
 # Fill holes
 if not os.path.exists(m_closed_filename):
-    os.system("./FillSurfaceHoles -i " + args.meshfile + " -o " + m_closed_filename)
+    #os.system("./FillSurfaceHoles -i " + args.meshfile + " -o " + m_closed_filename)
+    if platform == "linux" or platform == "linux2":
+        os.system('./FillSurfaceHoles -i ' + args.meshfile_open + ' -o ' + args.meshfile_closed)
+    elif platform == "win32":
+        os.system('FillSurfaceHoles_Windows\FillSurfaceHoles.exe -i ' + args.meshfile_open + ' -o ' + args.meshfile_closed + ' -smooth none')   # default smooth cotangent (and edglen) fails when using this binary
+    else:
+        sys.exit('Unknown operating system. Holes cannot be filled automatically. Fill holes manually and save file as ', m_closed_filename, '. Then run again this script to proyect scalar arrays from initial mesh if necessary.')
 
 # Mark filled holes with scalar array
 m_input = readvtk(args.meshfile)
